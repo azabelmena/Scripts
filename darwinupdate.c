@@ -13,7 +13,7 @@ int main(int argc, char **argv){
     const char *machine = argv[1];
 
     if(strstr("noether", machine)){
-        system("sudo darwin-rebuild --flake ~/.config/#noether switch");
+        system("darwin-rebuild --flake ~/.config/#noether switch");
     }
     else{
         return 1;
