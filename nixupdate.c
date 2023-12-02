@@ -18,6 +18,9 @@ int main(int argc, char **argv){
     else if(strstr("cauchy", machine)){
         system("sudo nixos-rebuild --upgrade --flake ~/.config/#cauchy switch");
     }
+    else if(strstr("noether", machine)){
+        system("darwin-rebuild --upgrade --flake ~/.config/#noether switch");
+    }
     else{
         return 1;
     }
