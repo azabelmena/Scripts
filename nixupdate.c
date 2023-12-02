@@ -13,13 +13,13 @@ int main(int argc, char **argv){
     const char *machine = argv[1];
 
     if(strstr("cayley", machine)){
-        system("sudo nixos-rebuild --upgrade --flake ~/.config/#cayley switch");
+        system("sudo nixos-rebuild --upgrade --flake ~/.config/#cayley --show-trace switch");
     }
     else if(strstr("cauchy", machine)){
-        system("sudo nixos-rebuild --upgrade --flake ~/.config/#cauchy switch");
+        system("sudo nixos-rebuild --upgrade --flake ~/.config/#cauchy --show-trace switch");
     }
     else if(strstr("noether", machine)){
-        system("darwin-rebuild --upgrade --flake ~/.config/#noether switch");
+        system("darwin-rebuild --upgrade --flake ~/.config/#noether --show-trace switch");
     }
     else{
         return 1;
