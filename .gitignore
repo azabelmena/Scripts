@@ -1,4 +1,3 @@
 nixcp
-nix-update
-darwinupdate
+nix-rebuild
 a.out
