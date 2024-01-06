@@ -18,6 +18,9 @@ int main(int argc, char **argv){
     else if(strstr("cauchy", machine)){
         system("sudo nixos-rebuild --upgrade --flake ~/.config/#cauchy --show-trace switch");
     }
+    else if(strstr("lovelace", machine)){
+        system("sudo nixos-rebuild --upgrade --flake ~/.config/#lovelace --show-trace switch");
+    }
     else if(strstr("noether", machine)){
         system("darwin-rebuild --flake ~/.config/#noether --show-trace switch");
     }
